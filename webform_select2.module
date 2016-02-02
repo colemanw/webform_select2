@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * This module provides a layout container for webforms.
+ */
+
+
+/**
+ * Implements hook_form_alter().
+ */
+function webform_select2_form_alter(&$form, &$form_state, $form_id) {
+  if (strpos($form_id, 'webform_client_form') === 0) {
+    $form['#attached']['js'][] = drupal_get_path('module', 'civicrm') . '/../bower_components/select2/select2.min.js';
+    $form['#attached']['css'][] = drupal_get_path('module', 'civicrm') . '/../bower_components/select2/select2.css';
+    $form['#attached']['js'][] = drupal_get_path('module', 'webform_select2') . '/webform_select2.js';
+  }
+}
+

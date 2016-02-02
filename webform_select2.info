@@ -1,0 +1,7 @@
+name = Webform Select2
+description = Use the select2 widget on all webform <select> elements.
+core = 7.x
+package = Webform
+
+dependencies[] = webform
+dependencies[] = civicrm
