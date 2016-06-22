@@ -1,6 +1,6 @@
 name = Webform Select2
-description = Use the select2 widget on all webform <select> elements.
-core = 7.x
+description = Use the select2 widget on all webform &lt;select&gt; elements.
+backdrop = 1.x
 package = Webform
 
 dependencies[] = webform
