@@ -8,7 +8,7 @@ function webform_select2_form_alter(&$form, &$form_state, $form_id) {
     $select2_path = $path = libraries_get_path('select2');
     $form['#attached']['js'][] = $select2_path . '/dist/js/select2.min.js';
     $form['#attached']['css'][] = $select2_path . '/dist/css/select2.min.css';
-    $form['#attached']['js'][] = drupal_get_path('module', 'webform_select2') . '/webform_select2.js';
+    $form['#attached']['js'][] = backdrop_get_path('module', 'webform_select2') . '/webform_select2.js';
   }
 }
 
